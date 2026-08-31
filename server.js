@@ -89,10 +89,15 @@ const resturaunts = [
 
 
 app.get('/',(req,res)=> {
-    res.render('homepage.ejs ')
+    res.render('homepage.ejs')
 })
 
-
+app.get('/resturaunts',(req,res)=> {
+    res.render('all-resturaunts.ejs',{
+      resturaunts : resturaunts
+    }
+     )
+})
 
 
 
