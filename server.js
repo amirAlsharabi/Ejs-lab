@@ -1,3 +1,12 @@
+const express = require("express") //importing express package
+const app = express() // creates a express application
+
+app.use(express.static('public')); //all static files are in the public folder
+
+
+
+
+
 // DATABASE
 const resturaunts = [
   {
@@ -73,3 +82,41 @@ const resturaunts = [
         ]
   }
 ];
+
+
+
+
+
+
+app.get('/',(req,res)=> {
+    res.render('homepage.ejs ')
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+app.listen(3000,()=>{
+    console.log('App is Running')
+}) // listen on port 3000
+
+
+
+
+
+
+
