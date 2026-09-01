@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resturaunts-details</title>
+</head>
+
+<body>
+    <%- include('./nav') %>
+
+        <h1>resturaunts-details</h1>
+
+        <h2>resturaunts name</h2>
+        <%= resturaunt.name %>
+            <h3>Restaurant Address</h3>
+            <%= resturaunt.address %>
+                <% if(resturaunt.isOpen===true){%>
+                    <h4>resturaunt statues: is open </h4>
+                    <% }else{ %>
+                        <h4>Resturaunt statues: it is close</h4>
+                        <% } %>
+
+                            <h4>phone number:</h4>
+                            <%= resturaunt.phone %>
+</body>
+
+</html>
