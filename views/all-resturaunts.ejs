@@ -13,9 +13,10 @@
         <h1>All Restaurants</h1>
 
         <% for(let oneRestaurants of resturaunts) { %>
-            <a href="/resturaunts/<%= oneRestaurants.id %>"></a>
+            <a href="/resturaunts/<%= oneRestaurants.id %>">
                 <%= oneRestaurants.name %>
             </a>
+            <br>
             <% } %>
 </body>
 </html>
